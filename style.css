@@ -154,12 +154,11 @@
         color: var(--clr-gray-4);
         background-color:var(--clr-brown-12);
        
-     }
+    }
      
      a {
-         color: white;
-         text-decoration: none;
-     }
+         color: var(--clr-white);
+    }
 
      a:hover,
      a:focus-visible {
@@ -168,12 +167,12 @@
 
      img {
         border-radius:var(--border-radius-3);
-     }
+    }
 
 
      .wrapper {
         border: 1px solid red;
-     }
+    }
      
      
 }
@@ -251,10 +250,16 @@
     }
 
     .primary-navigation{
-        & ul{
+        ul{
             display: flex;
             gap: 40px;
         }
+
+        a {
+            text-decoration: none;
+        }
+
+        
     }
 
     .hero {
@@ -383,7 +388,15 @@
         }
     }
 
-
+    .visually-hidden {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
 }
 
 
