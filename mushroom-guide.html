@@ -12,6 +12,7 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+    <script src="mushroom-guide.js" defer></script>
 </head>
 
 <body>
@@ -83,13 +84,13 @@
             <div class="wrapper flow">
                 <h2 class="section-title">Get to know your mushrooms</h2>
                 <div class="flex-group">
-                    <select name="" id="">
+                    <select name="season" id="season">
                         <option value="all">Season: All</option>
                         <option value="spring">Spring</option>
                         <option value="summer">Summer</option>
                         <option value="fall">Fall</option>
                     </select>
-                    <select name="" id="">
+                    <select name="edible" id="edible">
                         <option value="all">Type: All</option>
                         <option value="edible">Edible</option>
                         <option value="toxic">Toxic</option>
@@ -98,8 +99,9 @@
 
 
                 <!-- grid cards -->
-                <div class="cards small">
+                <div class="cards small mushroom-guide-cards">
                     <div class="grid-auto-fit">
+                        <div class="no-matches">No matches for these filters</div>
                         <!-- data-edible and data-season is for js -->
                         <div class="card grid-flow">
                             <h3 class="card__title">Chanterelle</h3>
@@ -128,7 +130,7 @@
                                     <span class="visually-hidden">This mushroom is </span>
                                     toxic
                                 </li>
-                                <li data-season="spring">
+                                <li data-season="summer">
                                     <span class="visually-hidden">
                                         Best season to harvest this mushroom is
                                     </span>
